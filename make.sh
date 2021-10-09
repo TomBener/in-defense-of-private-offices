@@ -14,7 +14,7 @@ perl -i -p -e 's/(__)(.*?)(__)/\*\2\*/g' *.md
 perl -i -p -e 's/ \{\{.*\}\}//g' *.md
 
 # Remove the hashtag
-perl -i -p -e 's/\s#\[\[.*\]\]//g' *.md
+perl -i -p -e 's/\s#\[\[.*?\]\]//g' *.md
 perl -i -p -e 's/\s#\S+//g' *.md
 
 # Remove block references alias with *
